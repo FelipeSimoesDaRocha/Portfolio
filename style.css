@@ -1,98 +1,217 @@
-*{
+/**
+  * GLOBALS
+  */
+:root {
+    --cor1: rgb(255, 127, 80);
+    --cor1Active: rgb(247, 138, 98);
+}
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
-body{
-    background-color:black;
 
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
 }
-header {
-   
-    text-align: right;
-    padding: .6rem 2rem;
+
+body{
+    background-color:grey;
 }
-.section{
-    width: 85%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
-    margin: auto;
-}
+
 h1{
     font-size: 35px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
-h4{
-    font-size: 18px;
-    font-weight: 600;
+h1 span {
+    color: var(--cor1);
 }
 
-.btn{
-    padding: 8px 26px;
-    background-color: coral;
+.btn {
+    padding: .8rem 1.7rem;
+    background-color: var(--cor1);
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    border-radius: 5px;
+    font-size: 1rem;
+    border-radius: 1000px;
+    cursor: pointer;
+    font-weight: 800;
+    display: inline-block;
+}
 
-}
-/* Top Section */
-.top-banner{
-    background-image: url('/Design/top-banner.png');
-   
-    margin-bottom: 50px;
-}
-.top-banner .section img{
-    margin-top: 20px;
+.container {
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
-.top-benner-text h1{
-    line-height: 70px;
-    margin-top: 100px;
-    margin-bottom: 30px;
+/**
+  * MENU
+  */
+header {
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
-.top-benner-text h1 .my-name{
-    color: gray;
+header nav {
+    text-align: right;
+    padding: .5rem 0;
 }
 
-.top-benner-text h4{
-    margin-bottom: 20px;
+header nav img {
+    width: 2.4rem;
 }
 
-.top-benner-text p{
-    margin-bottom: 30px;
+/**
+  * SECTION
+  */
+section {
+    padding-top: 65px;
+    min-height: 100vh;
+}
+section .btn {
+    margin-top: 3rem;
 }
 
-
-/* Dream Section */
-
-
-.dream-section{
-    background-image: url('/Design/dream-bg.png');
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-bottom: 80px;
+/**
+  * SECTION / HERO
+  */
+section.hero {
+    background: white;
+    display: flex;
+    align-items: center;
 }
 
-.dream-text h1{
-    line-height: 70px;
-    margin-bottom: 30px;
-    color: white;
+section.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.dream-text h4{
-    margin-bottom: 20px;
-    color: white;
+section.hero .left {
+    flex: 1;
+    order: 2;
 }
-footer p{
+
+section.hero .right {
+    flex: 1;
     text-align: center;
-    font-size: 14px;
-    margin-bottom: 50px;
+    order: 1;
+}
+section.hero .right img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50% 10%;
+    box-shadow: .8rem .8rem 0 var(--cor1);
+}
+
+
+@media (min-width: 800px) {
+    section.hero .container {
+        flex-direction: row;
+    }
+
+    section.hero .left {
+        order: 1;
+    }
+
+    section.hero .right {
+        order: 2;
+    }
+}
+
+/**
+  * SECTION / PROJECTS
+  */
+
+section.projects {
+    background: black;
     color: white;
+}
+
+section.projects .container {
+    display: flex;
+    align-items: center;
+}
+
+section.projects .container .left {
+    flex: 1;
+}
+
+section.projects .container .right {
+    flex: 1;
+}
+
+/**
+  * FOOTER
+  */
+footer {
+    background: black;
+}
+
+/**
+  * SECTION / CONTACT
+  */
+section.contact {
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+section.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.contact .left {
+    flex: 1;
+    order: 2;
+}
+
+section.contact .right {
+    flex: 1;
+    text-align: center;
+    order: 1;
+}
+section.contact .right img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 50% 10%;
+    box-shadow: .8rem .8rem 0 var(--cor1);
+}
+
+
+section.contact  h1 span {
+    color: #0e6d31;
+}
+
+section.contact .btn {
+    background: #0e6d31;
+}
+
+
+@media (min-width: 800px) {
+    section.contact .container {
+        flex-direction: row;
+    }
+
+    section.contact .left {
+        order: 1;
+    }
+
+    section.contact .right {
+        order: 2;
+    }
 }

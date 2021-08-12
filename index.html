@@ -6,55 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio do Felipe</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="O-header">
-        <a href="https://github.com/FelipeSimoesDaRocha"><img id="imagem" src="Design/icons/GitHub.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/felipe-sim%C3%B5es-da-rocha-980498214/"><img id="imagem"
-                src="Design/icons/linkedin.png" alt=""></a>
-        <a href="https://www.youtube.com/watch?v=qPYCnebQQ6U"><img id="imagem" src="Design/icons/Discord.png"
-                alt=""></a>
-        <a href="https://www.google.com.br/"><img id="imagem" src="Design/icons/Gmail.png" alt=""></a>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="https://github.com/FelipeSimoesDaRocha"><img src="Design/icons/GitHub.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/felipe-sim%C3%B5es-da-rocha-980498214/"><img src="Design/icons/linkedin.png" alt=""></a>
+                <a href="https://www.youtube.com/watch?v=qPYCnebQQ6U"><img src="Design/icons/Discord.png" alt=""></a>
+                <a href="https://www.google.com.br/"><img src="Design/icons/Gmail.png" alt=""></a>
+            </nav>
+        </div>
     </header>
 
-    <section class="top-banner">
-        <div class="section">
-            <div class="top-benner-text">
-                <h1>Olá!!<br>Eu sou <span class="my-name">Felipe Rocha</span></h1>
-                <h4>Sou estudante de Tecnologia e informação</h4>
-
-                <a class="btn" target="_blank"
-                    href="https://www.linkedin.com/in/felipe-sim%C3%B5es-da-rocha-980498214/">Contrate-me</a>
+    <section class="hero">
+        <div class="container">
+            <div class="left">
+                <h1>Eu sou <span>Felipe Rocha</span></h1>
+                <p>Sou estudante de Tecnologia e informação</p>
+                <p><a class="btn" target="_blank" href="https://www.linkedin.com/in/felipe-sim%C3%B5es-da-rocha-980498214/">Contrate-me</a></p>
             </div>
-            <div class="top-benner-image">
-                <img src="/Design/eu2.png" alt="">
+            <div class="right">
+                <img src="/Design/eu.jpeg" alt="">
             </div>
         </div>
     </section>
 
-    <section class="dream-section">
-        <div class="section">
-            <div class="dream-image">
+    <section class="projects">
+        <div class="container">
+            <div class="left">
                 <img src="/Design/a.gif" alt="">
             </div>
-            <div class="dream-text">
+            <div class="right">
                 <h1>Veja meus</span> Projetos</h1>
-                <h4>Acesse meu GitHub,e veja meus repositorios</h4>
-
+                <p>Acesse meu GitHub,e veja meus repositorios</p>
                 <!-- <p>Acesse meu GitHub,e veja meus repositorios</p> -->
-
-                <a class="btn" target="_blank"
-                    href="https://github.com/FelipeSimoesDaRocha?tab=repositories">Repositorios</a>
+                <a class="btn" target="_blank" href="https://github.com/FelipeSimoesDaRocha?tab=repositories">Repositorios</a>
             </div>
         </div>
     </section>
 
-    <footer>
+    <section class="contact">
+        <div class="container">
+            <div class="left">
+                <h1>Chame no <span>WhatsApp</span></h1>
+                <p>Fale-me sobre seu projeto!</p>
+                <p><a class="btn" target="_blank" href="https://www.linkedin.com/in/felipe-sim%C3%B5es-da-rocha-980498214/">Contrate-me</a></p>
+            </div>  
+            <div class="right">
+                <img src="/Design/eu.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer>
         <p>@ Felipe Rocha 2021</p>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
