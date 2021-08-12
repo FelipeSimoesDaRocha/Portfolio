@@ -9,6 +9,7 @@ body{
 }
 header {
    
+    text-align: right;
     padding: .6rem 2rem;
 }
 .section{
@@ -79,10 +80,6 @@ h4{
     margin-bottom: 80px;
 }
 
-.dream-section .section img{
-    width: 80%;
-}
-
 .dream-text h1{
     line-height: 70px;
     margin-bottom: 30px;
@@ -93,20 +90,9 @@ h4{
     margin-bottom: 20px;
     color: white;
 }
-
-.dream-text p{
-    margin-bottom: 30px;
-    color: white;
-}
-
 footer p{
     text-align: center;
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px;
-}
-.finaly p{
+    margin-bottom: 50px;
     color: white;
-
-    
 }
