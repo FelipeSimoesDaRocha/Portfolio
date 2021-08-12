@@ -113,6 +113,11 @@ section.hero .right img {
     max-width: 400px;
     border-radius: 50% 10%;
     box-shadow: .8rem .8rem 0 var(--cor1);
+    transition: border-radius .4s;
+}
+
+section.hero .right img:hover {
+    border-radius: 30% 20%;
 }
 
 
