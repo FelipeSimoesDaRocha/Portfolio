@@ -3,6 +3,11 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
+header {
+    background: black;
+    text-align: right;
+    padding: .6rem 2rem;
+}
 
 .section{
     width: 85%;
@@ -23,7 +28,7 @@ h4{
 
 .btn{
     padding: 8px 26px;
-    background-color: coral;
+    background-color: red;
     color: white;
     text-transform: uppercase;
     text-decoration: none;
