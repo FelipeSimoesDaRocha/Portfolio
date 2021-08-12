@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: khaki;
+    background-color:black;
 
 }
 header {
@@ -39,10 +39,7 @@ h4{
     border-radius: 5px;
 
 }
-
-/* =========== */
 /* Top Section */
-/* =========== */
 .top-banner{
     background-image: url('/Design/top-banner.png');
    
@@ -71,9 +68,9 @@ h4{
     margin-bottom: 30px;
 }
 
-/* ============= */
+
 /* Dream Section */
-/* ============= */
+
 
 .dream-section{
     background-image: url('/Design/dream-bg.png');
@@ -89,14 +86,17 @@ h4{
 .dream-text h1{
     line-height: 70px;
     margin-bottom: 30px;
+    color: white;
 }
 
 .dream-text h4{
     margin-bottom: 20px;
+    color: white;
 }
 
 .dream-text p{
     margin-bottom: 30px;
+    color: white;
 }
 
 footer p{
@@ -104,4 +104,9 @@ footer p{
     font-size: 14px;
     color: rgba(0, 0, 0, 0.7);
     margin-bottom: 10px;
+}
+.finaly p{
+    color: white;
+
+    
 }
