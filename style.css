@@ -95,8 +95,8 @@ h1 span {
 /*SECTION / HERO*/
 
 section.hero {
-    background: snow;
     display: flex;
+    background: snow;
     align-items: center;
 }
 
@@ -148,13 +148,16 @@ section.hero .right img:hover {
 /*SECTION / PROJECTS*/
 
 section.projects {
+    display: flex;
     background: black;
+    align-items: center;
     color: white;
 }
 
 section.projects .container {
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 section.projects .container .left {
@@ -164,21 +167,35 @@ section.projects .container .left {
 
 section.projects .container .right {
     flex: 1;
+    text-align: center;
     order: 2;
+}
+
+@media (min-width: 800px) {
+    section.projects .container {
+        flex-direction: row;
+    }
+    section.projects .left {
+        order: 1;
+    }
+    section.projects .right {
+        order: 2;
+    }
 }
 
 
 /* //////////////////////////////////////////////////////////////////////////* SECTION / CONTACT */
 
 section.contact {
-    background: #25d366;
     display: flex;
+    background: #25d366;
     align-items: center;
     color: white;
 }
 
 section.contact .container {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
