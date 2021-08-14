@@ -237,34 +237,16 @@ section.contact .btn {
 }
 
 .float {
-    position: center;
-    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    width: 60px;
     height: 60px;
     bottom: 40px;
     right: 40px;
-    background-color: transparent;
-    color: black;
+    color: midnightblue;
     border-radius: 50px;
     text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-}
-
-.my-float {
-    margin-top: 16px;
-}
-
-button {
-    text-align: center;
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    box-shadow: 2px 2px 3px #999;
-    border-radius: 50% 10%;
-    box-shadow: 0.8rem 0.8rem 0 var(--cor1);
+    font-size: 40px;
+    box-shadow: 2px 1px 10px springgreen;
+    z-index: 1000;
 }
