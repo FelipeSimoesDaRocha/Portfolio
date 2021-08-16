@@ -22,6 +22,31 @@ html {
     --cor1Active: rgb(247, 138, 98);
 }
 
+h1 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+h1 span {
+    color: var(--cor1);
+}
+
+
+/* wathsApp */
+
+.float {
+    background-color: transparent;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    color: midnightblue;
+    text-align: center;
+    font-size: 40px;
+    z-index: 1000;
+}
+
 
 /* MENU --------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -35,7 +60,7 @@ header {
 
 header nav {
     text-align: right;
-    padding: 0.5rem 0;
+    padding: 1.5rem 0;
 }
 
 header nav img {
@@ -58,16 +83,7 @@ section {
 }
 
 section .btn {
-    margin-top: 3rem;
-}
-
-h1 {
-    font-size: 35px;
-    font-weight: 800;
-}
-
-h1 span {
-    color: var(--cor1);
+    margin-top: 1rem;
 }
 
 
@@ -119,10 +135,10 @@ section.hero .right {
 
 section.hero .right img {
     width: 100%;
-    max-width: 400px;
-    border-radius: 50% 10%;
+    max-width: 500px;
+    border-radius: 50% 20%;
     box-shadow: 0.8rem 0.8rem 0 var(--cor1);
-    transition: border-radius 0.4s;
+    transition: border-radius 0.9s;
 }
 
 section.hero .right img:hover {
@@ -171,6 +187,12 @@ section.projects .container .right {
     order: 2;
 }
 
+.form-select {
+    text-align: center;
+    padding: 0;
+    border: 0;
+}
+
 @media (min-width: 800px) {
     section.projects .container {
         flex-direction: row;
@@ -200,6 +222,7 @@ section.contact .container {
 }
 
 section.contact .left {
+    text-align: left;
     flex: 1;
     order: 2;
 }
@@ -220,10 +243,6 @@ section.contact h1 span {
     color: #0e6d31;
 }
 
-section.contact .btn {
-    background: #0e6d31;
-}
-
 @media (min-width: 800px) {
     section.contact .container {
         flex-direction: row;
@@ -234,22 +253,4 @@ section.contact .btn {
     section.contact .right {
         order: 2;
     }
-}
-
-
-/* wathsApp */
-
-.float {
-    background-color: transparent;
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    color: midnightblue;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 40px;
-    box-shadow: 2px 1px 10px springgreen;
-    z-index: 1000;
 }
