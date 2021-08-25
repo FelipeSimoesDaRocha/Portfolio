@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7fe870d9-61a9-469c-936a-d142f2ad88ce/deploy-status)](https://app.netlify.com/sites/portifolio-felipesimoesdarocha/deploys)
+<br/>
 https://portifolio-felipesimoesdarocha.netlify.app/
 
 <h3 align="left"><img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="50"> Languages and Tools:</h3>
