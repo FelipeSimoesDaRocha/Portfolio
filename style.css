@@ -20,6 +20,7 @@ html {
 :root {
     --cor1: rgb(255, 127, 80);
     --cor1Active: rgb(247, 138, 98);
+    --color2: #0e6d31;
 }
 
 h1 {
@@ -189,7 +190,7 @@ section.projects .container .right {
 
 .form-select {
     text-align: center;
-    padding: 0;
+    padding: 1rem;
     border: 0;
 }
 
@@ -240,7 +241,7 @@ section.contact .right img {
 }
 
 section.contact h1 span {
-    color: #0e6d31;
+    color: ;
 }
 
 @media (min-width: 800px) {
