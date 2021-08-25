@@ -24,7 +24,7 @@ html {
 }
 
 h1 {
-    font-size: 35px;
+    font-size:  35px;
     font-weight: 800;
 }
 
@@ -53,7 +53,7 @@ h1 span {
 
 header {
     background: black;
-    position: absolute;
+    position: static;
     top: 0;
     left: 0;
     right: 0;
@@ -188,10 +188,20 @@ section.projects .container .right {
     order: 2;
 }
 
+section.projects .container .left img{
+
+  width: 100%;
+    max-width: 400px;
+    border-radius: 50% 10%;
+    box-shadow: 0.8rem 0.8rem 0 var(--cor1);
+
+}
+
 .form-select {
     text-align: center;
     padding: 1rem;
     border: 0;
+
 }
 
 @media (min-width: 800px) {
@@ -241,7 +251,7 @@ section.contact .right img {
 }
 
 section.contact h1 span {
-    color: ;
+    color: var(--color2);
 }
 
 @media (min-width: 800px) {
